@@ -83,7 +83,7 @@ def show_scores(update: Update):
     update.message.reply_text(msg)
 
 def main():
-    updater = Updater(os.environ[8570643844:AAFMhpfKtP5wlqZUjCHaILhPYjgFUJeNSW4])
+    updater = Updater("8570643844:AAFMhpfKtP5wlqZUjCHaILhPYjgFUJeNSW4")
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command, answer_handler))
